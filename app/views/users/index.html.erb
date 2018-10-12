@@ -1,0 +1,16 @@
+<table class="table table-striped">
+	<tr>
+	  <th>Name</th>
+	  <th>Email</th>
+	</tr>
+	<!-- %= @users.to_json% -->
+        <% for user in @users%>
+	  <tr>
+		    <td><%= user.name%>
+		    <td><%= user.name%></td>
+	  </tr>
+        <%end%>
+</table>
+
+
+<%= link_to "Add new user",new_user_path, :class=>"btn btn-primary"%>

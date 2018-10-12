@@ -1,0 +1,17 @@
+# to create a rails app use below command 
+rails new app_name
+# the above command will create the app with app_name
+# go inside the app using below command 
+cd app_name
+
+# to access the page from browser , start the app 
+rails server 
+# the above command will start the code on port 3000, to access the app
+hit - http://localhost:3000 from your browser
+
+# you will see a default page, to create you own page , first you need to create a controller which will create templates as well 
+rails g controller controller_name index new edit
+
+# run below command to see the availabe routes to use from the browser
+rake routes 
+ 
